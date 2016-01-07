@@ -1,0 +1,44 @@
+<Alloy>
+	<Collection src="monday"/>
+	<Window class="container" title="Monday">
+		<ScrollableView>
+			<!--Inclide Chest view-->
+			<View>
+				<Label id="exercise">Incline Bench Press</Label>
+				<TextField id="weightTextBox" class="weightTextBox" hintText="Weight">
+					<!-- Sets the keyboardToolbar property -->
+					<KeyboardToolbar>
+						<Toolbar>
+							<Items>
+								<Button systemButton="Ti.UI.iPhone.SystemButton.CANCEL" />
+								<FlexSpace/>
+								<Button style="Ti.UI.iPhone.SystemButtonStyle.DONE">Done</Button>
+							</Items>
+						</Toolbar>
+					</KeyboardToolbar>
+				</TextField>
+				<TextField id="repsTextBox" class="repsTextBox" hintText="Reps">
+					<!-- Sets the keyboardToolbar property -->
+					<KeyboardToolbar>
+						<Toolbar>
+							<Items>
+								<Button systemButton="Ti.UI.iPhone.SystemButton.CANCEL" />
+								<FlexSpace/>
+								<Button style="Ti.UI.iPhone.SystemButtonStyle.DONE">Done</Button>
+							</Items>
+						</Toolbar>
+					</KeyboardToolbar>
+				</TextField>
+				<!-- callback example <Button class="addButton" id="addButton" >Add to Log</Button> -->
+				<Button class="addButton" id="addButton" onClick="logMonday" >Add to Log</Button>
+				<!--Table View for Data-->
+				<TableView class="dataLog" id="dataLog" headerTitle="History" dataCollection="monday" dataTransform="transformFunction" top="40%" height="Ti.UI.FILL" backgroundColor="white">
+					<TableViewRow title="{custom}" height="40" ></TableViewRow>
+				</TableView>
+			</View>
+			<View>
+				<Label text="Test"></Label>
+			</View>
+		</ScrollableView>
+	</Window>
+</Alloy>

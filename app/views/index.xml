@@ -1,0 +1,34 @@
+<Alloy>
+	<NavigationWindow platform="ios">
+		<Window class="container" title="Workout Log" backgroundColor="black">
+			<TableView id="menuTable"  rowHeight="60">
+				<TableViewRow title="Monday" onClick="openMondayPopUp"></TableViewRow>
+				<TableViewRow title="Tuesday" onClick="openTuesday"></TableViewRow>
+				<TableViewRow title="Wednesday" onClick="openWednesday"></TableViewRow>
+				<TableViewRow title="Thursday" onClick="openThursday"></TableViewRow>
+				<TableViewRow title="Friday" onClick="openFriday"></TableViewRow>
+			</TableView>
+			<View class="popUpView" id="mondayPopUpView" >
+				<View class="popUpHeader" id="mondayHeader">
+					<Label>Enter Your Exercise Info</Label>
+				</View>
+				<Label top="13%" left="5%">Exercise Name:</Label>
+				<TextField class="popUpTextField" hintText="Bicep Curls" right="3%" top="11%"></TextField>
+				<Label top="23%" left="5%">Rest Time:</Label>
+				<TextField class="popUpTextField" hintText="60 seconds" right="3%" top="22%"></TextField>
+				<Picker id="restPicker" top="10%" selectionIndicator="true" useSpinner="true" visible="false" >
+					<PickerRow title="30 seconds"/>
+					<PickerRow title="45 seconds"/>
+					<PickerRow title="60 seconds"/>
+					<PickerRow title="90 seconds"/>
+					<PickerRow title="120 seconds"/>
+				</Picker>
+				<Button class="addButton" id="addExercise" top="33%" right="3%" width="50">Add</Button>
+				<TableView rowHeight="30" top="41%" height="45%" headerTitle="Exercises"></TableView>
+				<Button class="save" id="save" onClick="openMonday">Save</Button>
+				<Button class="cancel" id="cancel" onClick="closeMondayPopUp">Cancel</Button>
+				
+			</View>
+		</Window>
+	</NavigationWindow>
+</Alloy>

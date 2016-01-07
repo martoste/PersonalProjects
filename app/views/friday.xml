@@ -1,0 +1,5 @@
+<Alloy>
+	<Window class="container" title="Friday">
+		<Label id="Label">Friday</Label>
+	</Window>
+</Alloy>

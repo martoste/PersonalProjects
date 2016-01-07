@@ -1,0 +1,6 @@
+<Alloy>
+	<Window class="container" title="Tuesday">
+		<View id="view" borderRadius="10" backgroundColor="red" width="50" height="50" visible="false" />
+		<Label id="Label">Tuesday</Label>
+	</Window>
+</Alloy>

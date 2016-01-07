@@ -1,0 +1,18 @@
+
+"#exercise": {
+	top: "2%",
+	left: "5%",
+	    font: {
+        fontFamily:'Helvetica',
+        fontSize: '20',
+    }	
+
+}
+"list": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: "#000"	
+}
+
+
+
